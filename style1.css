@@ -1,0 +1,150 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins2;
+    src: url(fonts/Poppins-Light.ttf);
+}
+
+* {
+    font-family: poppins , 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+/* styles for NavBar */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.822);
+}
+
+.name {
+    display: flex;
+}
+
+.name p {
+    margin: 5px 0 0 10px;
+    font-size: 1.2em;
+}
+
+.name svg {
+    margin-left: 10px;
+}
+
+.links {
+    display: flex;
+    margin: 5px;
+}
+
+.links li , a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/* styles for about page */
+
+main {
+    width: 100vw;
+    height: 90vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 3vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.social a{
+    padding: 15px 8px;
+}
+
+.social a:hover svg{
+    width: 28px;
+    height: 30px;
+}
+
+/* styles for about us info  */
+
+.content {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+
+.content h1 {
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.356);
+    width: fit-content;
+    padding: 10px;
+}
+
+.content p {
+    max-width: 80vw;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 10px;
+    font-family: poppins2 , 'Courier New', Courier, monospace;
+}
+
+.card {
+    width: 16vw;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.445);
+    margin-right: 18px;
+    border-radius: 14px;
+}
+
+.card p {
+    font-family: poppins2 , 'Courier New', Courier, monospace;   
+    font-size: 0.7em;
+}
+
+.card svg{
+    margin: 0px 10px 0px 5px;
+}
+
+.btn2 {
+    border: none;
+    background-color: rgba(67, 67, 212, 0.658);    
+    padding: 5px 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.card-container {
+    display: flex;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+}
+
+.txt {
+    font-size: 2.6em;
+    width: 120px;
+    font-weight: 800;
+    margin-right: 100px;
+}

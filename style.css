@@ -1,0 +1,160 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins2;
+    src: url(fonts/Poppins-Light.ttf);
+}
+
+* {
+    font-family: poppins , 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+/* styles for NavBar */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.822);
+}
+
+.name {
+    display: flex;
+}
+
+.name p {
+    margin: 5px 0 0 10px;
+    font-size: 1.2em;
+}
+
+.name svg {
+    margin-left: 10px;
+}
+
+.links {
+    display: flex;
+    margin: 5px;
+}
+
+.links li , a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.search {
+    width: 32vw;
+    background-color: white;
+    border-radius: 80px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_bar {
+    border: none;
+    font-size: 0.78em;
+    border-radius: 40px;
+    width: 15.4vw;
+    padding: 5px;
+    color: black;
+}
+
+.btn {
+    background-color: rgba(67, 67, 212, 0.658);
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+/* styles for home page */
+
+main {
+    width: 100vw;
+    height: 90vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 3vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.social a{
+    padding: 15px 8px;
+}
+
+.social a:hover svg{
+    width: 28px;
+    height: 30px;
+}
+
+/* content of the body */
+
+.content {
+    position: absolute;
+    width: 50vw;
+    top: 24%;
+    left: 8%;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    font-size: 4em;
+    line-height: 11vh;
+}
+
+.content p {
+    width: 25vw;
+    font-size: 0.9em;
+    font-family: poppins2 , 'Courier New', Courier, monospace;
+    margin-bottom: 36px;
+}
+
+.content button {
+    padding: 8px 14px;
+    background-color: rgba(67, 67, 212, 0.658);
+    border: none;
+    cursor: pointer;
+}
+
+/* style for scroll bar  */
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins2;
+    src: url(fonts/Poppins-Light.ttf);
+}
+
+* {
+    font-family: poppins , 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+/* styles for NavBar */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.822);
+}
+
+.name {
+    display: flex;
+}
+
+.name p {
+    margin: 5px 0 0 10px;
+    font-size: 1.2em;
+}
+
+.name svg {
+    margin-left: 10px;
+}
+
+.links {
+    display: flex;
+    margin: 5px;
+}
+
+.links li , a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+/* styles for contact us page */
+
+main {
+    width: 100vw;
+    height: 90vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 3vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.social a{
+    padding: 15px 8px;
+}
+
+.social a:hover svg{
+    width: 28px;
+    height: 30px;
+}
+
+/* styles for contact us info  */
+
+.txt h1 {
+    font-size: 4em;
+} 
+
+.txt p {
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+form input {
+    margin: 16px 0;
+    padding: 6px 0px 6px 12px; 
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    border-radius: 10px;
+}
+
+textarea {
+    padding: 6px 0px 6px 12px;
+    margin: 16px 0 14px 0;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    border-radius: 10px;
+    resize: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 84vw;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+.btn1 {
+    background-color: rgba(67, 67, 212, 0.658);
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 12px;
+}
